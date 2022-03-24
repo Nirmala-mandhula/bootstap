@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show/hide passowrd</title>
+</head>
+<body>
+    <form action="">
+        Username:<input type="text" name="" id="" placeholder="enter user name"><br><br>
+       Password: <input type="password" name="m1" id="" placeholder="enter password"><br>
+    </form>
+    <button onclick="f1()">show</button>
+    <script>
+        var a1=document.querySelector("form");
+        var b1=document.querySelector("button");
+        function f1(){
+            if(a1.m1.type==='password'){
+                a1.m1.type="text";
+            }
+            else{
+                a1.m1.type="password";
+            }
+        }
+    </script>
+    
+</body>
+</html>
