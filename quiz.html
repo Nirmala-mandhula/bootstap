@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body>
+Q1.What does CSS stand for?<br>
+<input type="radio" name="question1" id="correct1">Cascading Style Sheet <br>
+<input type="radio" name="question1">Complete Sound Sheet <br>
+<input type="radio" name="question1">Cascading Style Syntax <br><br><br>
+
+Q2.What does HTML stand for?<br>
+<input type="radio" name="question2" >Hyper link markup language <br>
+<input type="radio" name="question2">Home tool markup language<br>
+<input type="radio" name="question2" id="correct2">Hyper text markup language <br><br>
+
+
+Q3.Choose the correct HTML element for the largest heading:<br>
+<input type="radio" name="question3" >h6 <br>
+<input type="radio" name="question3"id="correct3">h1 <br>
+<input type="radio" name="question3">head<br><br><br>
+
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>
